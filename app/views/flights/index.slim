@@ -1,0 +1,8 @@
+h1 Flights
+- if @flight.present?
+  ul
+    = @flight.each do |f|
+      li
+        = f.number + ' ' + f.aircraft_type + ' ' + f.state
+- else
+  |  No flights registered 

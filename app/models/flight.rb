@@ -3,4 +3,6 @@ class Flight < ApplicationRecord
 
   aasm :column => 'state' do
   end
+
+  
 end
