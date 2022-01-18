@@ -1,8 +1,13 @@
-h1 Flights
-- if @flight.present?
-  ul
-    = @flight.each do |f|
-      li
-        = f.number + ' ' + f.aircraft_type + ' ' + f.state
+h1.title Flights
+- if @flights.present?
+  table.table
+    -@flights.each do |f|
+      tr
+        td 
+          =f.number
+        td
+          =f.aircraft_type
+        td  
+          =f.state
 - else
   |  No flights registered 
